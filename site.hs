@@ -14,7 +14,7 @@ main = hakyll $ do
   match "css/*.hs" $ do
     route   $ setExtension "css"
     compile $
-      getResourceString >>= withItemBody (unixFilter "runghc" [])
+      getResourceString >>= withItemBody (unixFilter "cabal" ["exec", "runghc"])
 
   match (fromList ["about.rst", "contact.markdown"]) $ do
     route $ setExtension "html"

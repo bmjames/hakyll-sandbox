@@ -18,7 +18,7 @@ defaultStyle = do
     marginBottom (px 2)
     padding      (px 12) 0 (px 12) 0
 
-  div # "#header" # "#navigation" ?
+  div # "#header" # "#navigation" ? do
     textAlign (alignSide sideRight)
 
   div # "#header" # "#navigation" |> a ? do
@@ -36,9 +36,11 @@ defaultStyle = do
     fontWeight     bold
     textDecoration none
 
-  h1 ? fontSize (px 24)
+  h1 ? do
+    fontSize (px 24)
 
-  h2 ? fontSize (px 20)
+  h2 ? do
+    fontSize (px 20)
 
   div |> ".info" ? do
     color    "#555"
