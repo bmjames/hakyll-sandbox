@@ -4,5 +4,5 @@ cabal.sandbox.config
 _site
 _cache
 *~
-*.hi
-*.o
+Setup.hs
+dist
