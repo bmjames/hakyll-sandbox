@@ -9,7 +9,7 @@ license:             BSD3
 license-file:        LICENSE
 author:              Ben James
 -- maintainer:         
--- copyright:           
+copyright:           2009-2014, Jasper Van der Jeugt, Ben James 
 category:            Web
 build-type:          Simple
 -- extra-source-files:  
