@@ -18,10 +18,10 @@ defaultStyle = do
     marginBottom (px 2)
     padding      (px 12) 0 (px 12) 0
 
-  div # "#header" # "#navigation" ? do
+  div # "#header" |> "#navigation" ? do
     textAlign (alignSide sideRight)
 
-  div # "#header" # "#navigation" |> a ? do
+  div # "#header" |> "#navigation" |> a ? do
     color          black
     fontSize       (px 18)
     fontWeight     bold
